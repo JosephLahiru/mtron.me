@@ -1,5 +1,6 @@
 import './App.css';
 import logo from'./under-construction.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
