@@ -1,14 +1,16 @@
-import './App.css';
-import logo from'./under-construction.jpg';
+import {Routes, Route} from 'react-router-dom';
+import { About } from './components/about';
+import { Construction } from './components/construction';
+import Home from './components/home';
+import { NoMatch } from './components/nomatch';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to Team Metatron</h1>
-      <h2>This Site is under construction</h2>
-
-      <img src={logo}/>
-    </div>
+function App(){
+  return(
+      <Routes>
+        <Route path='/' element={<Construction/>}></Route>
+        <Route path='about' element={<About/>}></Route>
+        <Route path='*' element={<NoMatch/>}></Route>
+      </Routes>
   );
 }
 
