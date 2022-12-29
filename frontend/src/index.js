@@ -9,15 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <BrowserRouter>
-<<<<<<< HEAD
-    <App />
-=======
       <App />
->>>>>>> 83502c856540ae2ce4e3ee7b0f950e793a2ceffb
     </BrowserRouter>
-  </React.StrictMode>
 );
 
 reportWebVitals();
