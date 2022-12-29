@@ -8,8 +8,9 @@ import { NoMatch } from './components/nomatch';
 function App(){
   return(
     <>
+    <NavBar/>
       <Routes>
-      <NavBar/>
+      
         <Route path='/' element={<Construction/>}></Route>
         <Route path='about' element={<About/>}></Route>
         <Route path='*' element={<NoMatch/>}></Route>
