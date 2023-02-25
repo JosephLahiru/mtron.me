@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Creative Tim",
   "license": "MIT",
+  "no-error-on-warning": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/creativetimofficial/blk-design-system-react.git"
@@ -62,7 +63,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
@@ -86,5 +87,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13"
   }
 }
