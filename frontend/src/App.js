@@ -1,21 +1,30 @@
-import {Routes, Route} from 'react-router-dom';
-import { About } from './components/about';
-import { Construction } from './components/construction';
-import Home from './components/home';
-import NavBar from './components/navbar';
-import { NoMatch } from './components/nomatch';
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
+import Index from "views/Index.js";
+import LandingPage from "views/examples/LandingPage.js";
+import RegisterPage from "views/examples/RegisterPage.js";
+import ProfilePage from "views/examples/ProfilePage.js";
 
 function App(){
   return(
-    <>
-    <NavBar/>
-      <Routes>
-      
-        <Route path='/' element={<Construction/>}></Route>
-        <Route path='about' element={<About/>}></Route>
-        <Route path='*' element={<NoMatch/>}></Route>
-      </Routes>
-    </>
+    <BrowserRouter>
+    <Switch>
+      <Route path="/components" render={(props) => <Index {...props} />} />
+      <Route
+        path="/landing-page"
+        render={(props) => <LandingPage {...props} />}
+      />
+      <Route
+        path="/register-page"
+        render={(props) => <RegisterPage {...props} />}
+      />
+      <Route
+        path="/profile-page"
+        render={(props) => <ProfilePage {...props} />}
+      />
+      <Redirect from="/" to="/components" />
+    </Switch>
+  </BrowserRouter>
   );
 }
 
