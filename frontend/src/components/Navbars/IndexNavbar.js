@@ -8,7 +8,7 @@ import {
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
-  const [collapseOut, setCollapseOut] = React.useState("");
+  // const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
@@ -33,17 +33,17 @@ export default function IndexNavbar() {
     document.documentElement.classList.toggle("nav-open");
     setCollapseOpen(!collapseOpen);
   };
-  const onCollapseExiting = () => {
-    setCollapseOut("collapsing-out");
-  };
-  const onCollapseExited = () => {
-    setCollapseOut("");
-  };
-  const scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
-  };
+  // const onCollapseExiting = () => {
+  //   setCollapseOut("collapsing-out");
+  // };
+  // const onCollapseExited = () => {
+  //   setCollapseOut("");
+  // };
+  // const scrollToDownload = () => {
+  //   document
+  //     .getElementById("download-section")
+  //     .scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
