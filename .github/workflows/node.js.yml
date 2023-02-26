@@ -21,5 +21,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: cd frontend && npm i
-    - run: pm2 delete 0
+    # - run: pm2 delete 0
     - run: cd frontend && (pm2 start npm --name "react-app" -- start --no-deamon&)
