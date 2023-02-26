@@ -9,20 +9,20 @@ function App(){
   return(
     <BrowserRouter>
     <Switch>
-      <Route path="/components" render={(props) => <Index {...props} />} />
+      <Route path="/home" render={(props) => <Index {...props} />} />
       <Route
-        path="/landing-page"
+        path="/landing"
         render={(props) => <LandingPage {...props} />}
       />
       <Route
-        path="/register-page"
+        path="/register"
         render={(props) => <RegisterPage {...props} />}
       />
       <Route
-        path="/profile-page"
+        path="/profile"
         render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect from="/" to="/components" />
+      <Redirect from="/" to="/home" />
     </Switch>
   </BrowserRouter>
   );
