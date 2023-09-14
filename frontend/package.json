@@ -1,36 +1,12 @@
 {
-  "name": "blk-design-system-react",
-  "version": "1.2.2",
-  "description": "React version of BLK Design System by Creative Tim",
+  "name": "metatron-web",
+  "version": "1.0",
+  "description": "Team Metatron Web",
   "main": "index.js",
-  "author": "Creative Tim",
-  "license": "MIT",
   "no-error-on-warning": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-react.git"
-  },
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
-  },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
+  "homepage": "https://github.com/Team-Metatron/mtron.me",
   "keywords": [
-    "react",
-    "reactjs",
-    "blk",
-    "blk-react",
-    "design",
-    "design-react",
-    "system",
-    "system-react",
-    "design-system",
-    "design-system-react",
-    "blk-design",
-    "blk-design-react",
-    "blk-system",
-    "blk-system-react",
-    "blk-design-system",
-    "blk-design-system-react"
+    "metatron"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "5.16.4",
@@ -67,8 +43,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
-    "minify-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --style compressed"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": [
@@ -89,6 +65,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13"
+    "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.0.0"
   }
 }
