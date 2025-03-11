@@ -39,12 +39,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +66,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.3.0"
   }
 }

@@ -21247,7 +21247,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-transition: border-color ease-in-out 0.15s,
     box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png");
+  background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/just-night-v2.png");
   background-position: center center;
   background-size: cover;
 }
@@ -24005,7 +24005,7 @@ td.rdtYear:hover {
   height: 22px;
   width: 45px;
   border: none;
-  background-image: url("../../../../assets/img/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png");
+  background-image: url("../../../../assets/img/just-night.png");
   background-position: center center;
   background-size: cover;
 }
@@ -24017,7 +24017,7 @@ td.rdtYear:hover {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
-  background-image: url("../../../../assets/img/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png");
+  background-image: url("../../../../assets/img/just-night-v2.png");
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
